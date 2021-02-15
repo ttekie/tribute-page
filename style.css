@@ -17,6 +17,7 @@ body #main {
 #img-div #image {
   max-width: 100%;
   height: auto;
+  width: 800px;
   display: block;
   margin: 15px auto;
   padding-top: 20px;
