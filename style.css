@@ -1,24 +1,36 @@
-body #main {
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+main {
   background-color: rgba(85, 85, 85, 0.1);
   color: rgba(0, 0, 0, 0.8);
   font-family: Helvetica, Verdana, Arial, sans-serif ;
+  font-size: 17px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 5px;
 }
+#title {
+   color: #f30067;
+   font-size: 48px;
+   padding: 3rem 0 1rem;
+}
 #title, p {
-  text-align: center;
+   text-align: center;
 }
 #img-div {
-  background-color: rgb(255, 255, 255);
-  width: 97%;
-  margin: 0 auto;
+   background-color: rgb(255, 255, 255);
+   width: 97%;
+   margin: 0 auto;
 }
 #img-div #image {
   max-width: 100%;
   height: auto;
   width: 800px;
   display: block;
+  border-bottom: 10px solid #f30067;
   margin: 15px auto;
   padding-top: 20px;
 }
@@ -31,16 +43,44 @@ body #main {
   max-width: 100%;
 }
 #tribute-info #headline {
-  text-align: center;
+  text-align: inherit;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-size: 1.6em;
 }
 #tribute-info ul {
   list-style: outside;
-  padding: 0 28%;
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
 }
 #tribute-info li {
   text-align: justify;
   margin-bottom: 10px;
   line-height: 1.7em;
+  padding-left: 4px;
+  list-style: square;
+}
+#tribute-info li::marker {
+  color: #f30067;
+  font-size: 23px;
+  
+}
+#quote {
+  color: #f30067;
+  
+}
+cite {
+  display: block;
+  margin: 15px 0;
+}
+a {
+  text-decoration: none;
+  color: #f30067;
+}
+a:hover {
+  color: #00d1cd;
+}
+.pointer {
+  filter: blur(0.2px);
 }
